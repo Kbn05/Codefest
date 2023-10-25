@@ -1,0 +1,22 @@
+ <h1>Bienvenido, {{user}}</h1>
+
+    <h2>Tus amigos:</h2>
+    <ul>
+        {{#each friends}}
+            <li>{{this.f_user_1}} y {{this.f_user_2}}</li>
+        {{/each}}
+    </ul>
+
+    <h2>Solicitudes de amistad pendientes:</h2>
+    <ul>
+        {{#each friendRequests}}
+            <li>{{this.f_sender}} ha enviado una solicitud de amistad a {{this.f_receiver}}</li>
+        {{/each}}
+    </ul>
+
+    <h2>Tus publicaciones:</h2>
+    <ul>
+        {{#each posts}}
+            <li>{{this.p_title}}: {{this.p_content}}</li>
+        {{/each}}
+    </ul>
